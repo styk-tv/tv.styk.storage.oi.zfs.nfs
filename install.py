@@ -50,5 +50,5 @@ print out
 os.mkdir(os.path.join(RUN_PATH, 'apps'))
 out = subprocess.Popen(['git', 'clone', 'git://github.com/styk-tv/tv.styk.storage.oi.zfs.nfs.git', 'apps/status'], stdout=subprocess.PIPE).communicate()[0]
 print out
-print "To start zfs.status - source " + os.path.join(RUN_PATH, 'env') + '/zfs.status/bin/activate, cd apps/status, python status.py, browse http://127.0.0.1:8080/status'
+print "To start zfs.status - source " + os.path.join(RUN_PATH, 'env') + '/zfs.status/bin/activate, cd apps/status, python zfsapi.py, browse http://127.0.0.1:8080/status'
 

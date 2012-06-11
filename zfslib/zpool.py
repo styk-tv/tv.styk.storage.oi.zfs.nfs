@@ -19,4 +19,4 @@ def zpool_status():
             if line:
                 out_dict[key].append(line.strip())
     out_list.append(out_dict)
-    return oul_list
+    return out_list
